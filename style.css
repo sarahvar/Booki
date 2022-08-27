@@ -1,0 +1,600 @@
+  /* FONT */
+
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+  * {
+    box-sizing:border-box;
+    font-family:"Raleway", "sans-serif";
+  }
+  
+   /* FIN DE FONT */
+
+  /* 1 NAVBAR*/
+
+  .logo {
+    margin-right: auto;
+    padding: 2rem;
+  }
+
+  .signup:hover {
+    border-top:3px solid #0065FC;
+    color:#0065FC;
+  }/*bordure en haut de signup quand on met le curseur en version desktop et tablette*/
+    
+  .sub-nav {
+    display:flex;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    padding: 30px;
+  } 
+
+  /* FIN DE NAVBAR */
+
+  /* 2 HEADINGS */
+  
+  .wrapper {
+    padding:0 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .title{
+    font-size:  12px;
+  }
+  /* FIN DE HEADINGS */
+
+/* 3 BARRE DE RECHERCHE*/
+
+.search-bar {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.search-bar i{
+  padding:1rem 1.2rem;
+  background-color: #f2f2f2;
+  border-radius: 9px 0 0 9px;
+}
+.search-bar input{
+  padding-right:3rem;
+  border: #f2f2f2 solid 2px;
+  flex-basis: 16rem;
+  overflow: auto;
+
+}
+
+.search-bar input::placeholder{
+  color:black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: #f2f2f2;
+  padding: 1rem;
+  
+}
+
+.search-bar button{
+  background-color: #0065FC;
+  border:#0065FC;
+  color:white;
+  font-size: 18px;
+  border-radius: 0px 12px 12px 0px;
+  font-weight: bold;
+  padding:16px 16px;
+  cursor: pointer;
+}
+.search-bar button:hover{
+  background-color: darkblue; /*mets le boutton rechecher et la loupe en bleu foncer*/
+  transition: 200ms;
+}
+
+.fa-solid.fa-magnifying-glass{
+  display: none; /*Ne pas voir la loupe en Desktop*/
+} 
+
+/* FIN DE BARRE DE RECHERCHES */
+
+/* 4 FILTRES */
+
+.filtre-list{
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.filtre-list h1{
+  margin-bottom: 0;
+}
+
+.filtres{
+  margin: 10px 0 0 10px;
+  border:2px solid #CFCECE;
+  border-radius: 32px;
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+
+.filtres .fa-solid{
+color:blue;
+background-color:#DEEBFF;
+border-radius: 50%;
+margin:-3px;
+width: 3rem;
+height:3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.filtres span {
+font-weight: bold;
+padding: 1rem; 
+}
+
+.filtres:hover {
+background-color: #DEEBFF; /*mets les filtres "economiques, familiales,ect en couleur #DEEBFF en respectant la charte grafique*/
+transform: scale(1.03);
+}
+/* FIN DE FILTRES */
+
+/* 5 MESSAGE RESULTATS */
+.message-resultats{
+  display:flex; 
+  align-items: center;
+  gap:1rem;
+} 
+.message-resultats .fa-solid{
+  color:  blue;
+  border-radius: 50%;
+  border: 2px solid lightgray;
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* FIN MESSAGE RESULTATS */
+
+/* 6 LISTE D'APPARTEMENTS */
+.liste-appartements{
+  display: flex; /*permets à la liste-appartements d'être flexible */
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.liste-appartements > div{
+background-color: #f2f2f2;
+padding: 1rem;
+border-radius: 1rem;
+}
+
+.liste-appartements .hébergements{
+  flex-basis: 66%;
+}
+
+.liste-appartements .populaires{
+  flex-basis: 34%;
+}                /*Déterminer la taille de hébergements et populaires*/
+/* FIN LISTE D'APPARTEMENTS */
+
+/* HEBERGEMENTS LISTE APPARTEMENT */
+
+.hébergements-liste-appartements{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+/* FIN HERBERGEMENTS LISTE APPARTEMENT */
+
+
+/* 7 POPULAIRES */
+
+.liste-appartements .populaires{
+gap:1rem;
+display:flex;
+flex-direction: column;
+}
+/* FIN POPULAIRES */
+
+/* CARTE DES APPARTEMENTS */
+.carte-appartements{
+  background-color: white ;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  box-shadow: 0 0 16px #0000002e ;
+  cursor: pointer;
+  transition-duration: 2s; /* le délai de transition entre mon carte-appartement et mon hver */
+}
+.carte-appartements:hover{
+  background-color: #DEEBFF; /* mets les hébergements à marseille en #DEEBFF */
+  transform: scale(1.03); /*permets de modifier la taille, de le faire resortir */
+}
+
+.carte-appartements img{
+  border-radius: 1rem 1rem 0rem 0rem ;
+  height: 130px;
+  width: 220px;
+}
+
+.carte-appartements p{
+margin: 3%;
+}
+
+.populaires img{
+  border-radius: 1rem 1rem 0rem 0rem ;
+  height: 130px;
+  width: 220px;
+}
+
+.populaires-carte-appartements{
+  background-color: white ;
+  border-radius: 1rem;
+  padding: 0.3rem 0.2rem 0.1rem 0.1rem;
+  box-shadow: 0 0 16px #0000002e ;
+  height:auto;
+  margin-top: -9px;
+  transition-duration: 2s;
+}
+.populaires-carte-appartements:hover{
+  background-color: #DEEBFF; /*mets les populaires en #DEEBFF */
+  transform: scale(1.03);
+}
+.populaires-carte-appartements img{
+  border-radius: 1rem 0.9rem 0rem 10rem ;
+  height: 130px;
+  width: 140px;
+  float: left;
+}
+
+.populaires-carte-appartements p{
+  margin: 19px 10px;
+  flex-basis: 100%;
+  display: flex;
+  padding-left: 10px;
+  height: 19px;
+  min-width: 15rem;
+}
+
+.right-text{
+  display: flex;
+  flex-direction : row;
+  }
+
+.populaires img{
+  border-radius: 1rem 0rem 0rem 1rem ;
+  height: 130px;
+}
+.populaires h3{
+  display:flex;
+  justify-content: space-between;
+
+}
+.liste-appartements .star {
+color:#0065FC;
+}
+.gris{
+  color:#CFCECE;
+}
+/* FIN CARTE DES APPARTEMENTS */
+
+/* 8 ACTIVITES A MARSEILLE */
+.column {
+  display: flex; /*Permets de faire le gap entre les images*/
+  flex-direction: column; /*Mets les images de colonne 2 et colonne 4 chacune en colonne*/
+  padding-left:2rem;
+  width: 22%; /*Chaque colonne prend 22% de la page en largeur*/
+  gap: 32px; /*Mets de l'espace entre les images dans la même colonne*/
+  cursor: pointer;
+
+}
+
+.column h4 {
+  margin: 0;
+  padding: 19px 0 25px 0;
+  padding-left: 16px;
+  font-size: 90%;
+}
+.column1 {
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+  height: 480px;
+}
+.column2_1, .column2_2{
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+}
+.column3 {
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+  height: 480px;
+}
+.column4_1, .column4_2 {
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 16px;
+}
+.column1:hover {
+  box-shadow: 8px 4px 25px 0px skyblue; /*mets la taille et la couleur de l'ombre derriere mes column */
+  transition-duration: 0.4s;
+}
+
+.column2_1:hover{
+  flex:1;
+  box-shadow: 8px 4px 25px 0px skyblue;
+  transition-duration: 0.4s;
+}
+
+.column2_2:hover {
+  flex:1;
+  box-shadow: 8px 4px 25px 0px skyblue;
+  transition-duration: 0.4s;
+}
+.column3:hover{
+  flex:1;
+  box-shadow: 8px 4px 25px 0px skyblue;
+  transition-duration: 0.4s;
+}
+.column4_1:hover {
+  flex:1;
+  box-shadow: 8px 4px 25px 0px skyblue;
+  transition-duration: 0.4s;
+} 
+
+.column4_2:hover {
+  flex:1;
+  box-shadow: 8px 4px 25px 0px skyblue;
+  transition-duration: 0.4s;
+}
+
+.activites {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 80%;
+  width: 100%;
+}
+
+
+.section_activite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+  margin-bottom: 64px;
+}
+.activites {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 80%;
+  width: 100%;
+}
+.carte_activites {
+  margin-left: -2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.activites h3 {
+  padding-left: 1rem;
+  display: inline-block;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.image1 {
+  width: 100%; /*Prend 100% de la class*/
+  object-fit: cover; /*permets aux images de garder leurs ratios d'affichage tout en remplissant sa boîte de contenu*/
+  border-radius: 16px 16px 0 0;
+  height: 415px; /*Détermine la taille de l'image*/
+}
+.image2 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  height: 190px;
+}
+
+.image3 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  height: 128px;
+}
+.image4 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  height: 415px;
+}  
+.image5 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  height: 159px;
+}
+.image6 {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  height: 159px;
+}
+/* FIN ACTIVITES A MARSEILLE */
+
+/* 9 DEBUT FOOTER */
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+footer div {
+  display: flex; /*permets à la DIV footer d'être flexible pour la positionner sur desktop*/
+  width: 1300px; /*permets au footer de faire 1300px sur la page */
+  width: 100%; /*footer de prendre 100% de la page */
+  box-sizing: border-box;
+
+}
+
+.colonne_footer {
+  display: block; /*permets à la DIV colonne_footer de s'afficher en block */
+  padding: 16px 32px;
+}
+
+.colonne_footer a {
+  display: block; /*permets les sous titres de se mettre l'un en dessous de l'autre dans sa colonne */
+  margin-bottom: 11px; /*mets 11px d'espace entre les sous textes a */
+}
+
+/* FIN FOOTER */
+
+
+/* MEDIA QUERIES  */
+
+/* 1 NAVBAR */
+@media (min-width:320px) and (max-width:767px) { 
+  .logo {
+    margin: auto; /*logo booki centrer en version mobile qui est en dessous de 768px*/
+  }
+}
+
+@media (min-width:320px) and (max-width:767px) {
+  .sub-nav{
+    text-align: center; /*Hébergements et Activités au centre de sa DIV*/
+    width: 100%; /*permets de prendre 100% de la largeur de la page sur mobile*/
+  }
+
+  .signup{
+    padding: 1rem;
+    width: 100%;
+    border-bottom:3px solid #f2f2f2;
+
+  }
+  .signup:hover{
+    border-top: none; /*enlève la bordure au dessus de hébergement et activités sur mobile */
+    border-bottom:3px solid #0065FC; /*mets une bordure en dessous */
+  }
+}
+  /* FIN NAVBAR */
+
+  /* 3 BARRE DE RECHERCHE */
+@media (min-width:320px) and (max-width:767px) {
+  .search-bar .search-text{
+    display: none; 
+  }
+
+  .fa-solid.fa-magnifying-glass{
+    display:inline;
+    background-color: inherit;
+    }
+}
+/* 3 FIN BARRE DE RECHERCHE */
+
+/* 6 LISTE  D'APPARTEMENTS HEBERGEMENTS A MARSEILLE */
+@media (min-width:320px) and (max-width:767px) {
+  .carte-appartements{
+    width:100%; /*permets à hébergements de prendre 100% de la largeur quand on est sur mobile*/
+  }
+}
+@media (min-width:320px) and (max-width:767px) {
+  .carte-appartements img{
+    width: 100%; /*permets aux images de prendre 100% de la largeur de la DIV */
+    object-fit: cover ; /*permets aux images de garder leurs ratios d'affichage tout en remplissant sa boîte de contenu*/
+  }
+}
+@media (min-width:320px) and (max-width:992px) {     
+  .liste-activités{
+    grid-template-columns: auto;
+}
+}
+@media (min-width:320px) and (max-width:992px) {
+  .liste-appartements{
+    flex-direction: column-reverse;  /*inverser ordre hébergements et populaires en colonne*/
+}
+}
+/* 6 FIN LISTE D'APPARTEMENTS HEBERGEMENTS A MARSEILLE */
+
+/* 8 ACTIVITES A MARSEILLE */
+@media (min-width:320px) and (max-width:992px) {
+  .column {
+    width: 100%; /*permet aux div colonne de prendre 100% de largeur sur tablette et mobile */
+  }
+}
+@media (min-width:320px) and (max-width:992px) {
+.image1 {
+  height: 150px;
+}
+}
+@media (min-width:320px) and (max-width:992px) {
+  .image2 {
+  height: 150px;
+  }
+}
+@media (min-width:320px) and (max-width:992px) {
+  .image3 {
+  height: 150px;
+  }
+}
+@media (min-width:320px) and (max-width:992px) {
+  .image4 {
+  height: 150px;
+  }
+}
+@media (min-width:320px) and (max-width:992px) {
+  .image5 {
+  height: 150px;
+  }
+}
+@media (min-width:320px) and (max-width:992px) {
+  .image6 {
+  height: 150px;
+  }
+}
+@media (min-width:320px) and (max-width:992px) {
+.column1 {
+  height: 200px;
+}
+}
+@media (min-width:320px) and (max-width:992px) {
+  .column3 {
+    height: 200px;
+  }
+  }
+
+/* FIN ACTIVITES A MARSEILLE */
+
+/* 9 FOOTER */ 
+@media (min-width:320px) and (max-width: 767px) {
+  footer div {
+    display:block; /*permets de mettre les div l'une en dessous de l'autre */
+    margin-right: 29%; /*permets à ce que la div footer prenne une marge de 29% à partir de la droite sur mobile en dessous de 768*/
+  }
+}
+@media (min-width:768px) and (max-width: 992px) {
+  footer div {
+    width:70%; /*permets de centrer chaque divclass footer sur tablette */
+  }
+}
+/* FIN FOOTER */
+
+  /* FIN MEDIA QUERIES */
